@@ -1,0 +1,66 @@
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 800px;
+    overflow: hidden;
+}
+
+
+button{
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    padding: 100px 150px 0 50px;
+    background-color: black;
+    color: white;
+    height: 800px;
+    transform: translate(100%);
+
+}
+
+.menu p::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    background-color: #fff;
+}
+
+.anim_open{
+    animation: anim_open 1s ease forwards;
+}
+
+@keyframes anim_open {
+    from {
+        
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+.anim_close{
+    animation: anim_close 1s ease;
+}
+
+@keyframes anim_close{
+    from{
+        transform: translate(0);
+    }
+
+    to{
+
+    }
+}
